@@ -230,8 +230,7 @@ namespace CookieVault
             statusBar.Controls.Add(lblCookieCount);
             statusBar.Resize += (s, e) =>
             {
-                lblCookieCount.Location = new Point(
-                    statusBar.Width - lblCookieCount.Width - 14, 7);
+                lblCookieCount.Location = new Point(statusBar.Width - lblCookieCount.Width - 14, 7);
             };
 
             // Resize grip
@@ -241,6 +240,7 @@ namespace CookieVault
                 Cursor = Cursors.SizeNWSE
             };
             statusBar.Controls.Add(grip);
+            grip.Location = new Point(statusBar.Width - grip.Width, 10);
 
             // Assembly
             Controls.Add(webContainer);
