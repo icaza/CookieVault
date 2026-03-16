@@ -343,12 +343,6 @@ namespace CookieVault
 
         void WebView_NavigationStarting(object sender, CoreWebView2NavigationStartingEventArgs e)
         {
-            if (e.Uri == "about:blank")
-            {
-                txtUrl.Text = "https://";
-                return;
-            }
-
             if (!Uri.TryCreate(e.Uri, UriKind.Absolute, out Uri uri) ||
                 (uri.Scheme != "https" && uri.Scheme != "http"))
             {
