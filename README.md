@@ -2,8 +2,6 @@
 
 **A secure, isolated browser to generate Netscape-format cookie files — without ever exposing your real browser data.**
 
----
-
 ## Why CookieVault exists
 
 Tools like **yt-dlp**, **gallery-dl**, and similar utilities support cookie-based authentication through a `cookies.txt` file in the Netscape format. The most common way to generate this file is by exporting cookies directly from your browser — Chrome, Firefox, or Edge — using a browser extension.
@@ -14,8 +12,6 @@ When you export cookies from your main browser, you are extracting **all cookies
 
 **CookieVault solves this problem at the root.**
 
----
-
 ## What CookieVault does
 
 CookieVault is a **minimal, sandboxed browser** with one single purpose: visit a website, let it set its cookies, and export only those cookies to a clean `cookies.txt` file.
@@ -23,8 +19,6 @@ CookieVault is a **minimal, sandboxed browser** with one single purpose: visit a
 Nothing else. No history. No saved passwords. No extensions. No connection to your real browser profile.
 
 You navigate to the service you need — YouTube, for example — log in, and export. The resulting file contains **only the cookies from that one session**, in a clean Netscape format ready to be passed directly to yt-dlp.
-
----
 
 ## How it protects you
 
@@ -39,8 +33,6 @@ CookieVault runs in a **fully isolated browsing environment**, completely separa
 - ✅ **Only HTTP and HTTPS** — no other URL schemes can be loaded.
 
 When you click export, you get exactly what you asked for: the cookies from that session, nothing more.
-
----
 
 ## The output
 
@@ -60,8 +52,6 @@ Pass it directly to yt-dlp:
 yt-dlp --cookies cookies.txt "https://www.youtube.com/watch?v=..."
 ```
 
----
-
 ## Who this is for
 
 - Anyone using **yt-dlp** to access age-restricted or account-gated content
@@ -69,22 +59,16 @@ yt-dlp --cookies cookies.txt "https://www.youtube.com/watch?v=..."
 - Anyone who wants to generate a cookie file **without touching their main browser**
 - Anyone who values the principle that a tool should only access what it strictly needs
 
----
-
 ## What CookieVault is NOT
 
 CookieVault is not a general-purpose browser. It has no bookmarks, no tabs, no history, no address suggestions, no download manager. It does one thing well: authenticate a session and export its cookies safely.
 
 If you need a full browser, use a full browser. If you need a safe way to generate a `cookies.txt` file, use CookieVault.
 
----
-
 ## Requirements
 
 - Windows 10 or later
 - Microsoft Edge WebView2 Runtime (included with Windows 11 and most Windows 10 installations)
-
----
 
 ## License
 
